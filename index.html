@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Jake Miller" />
+    <title>Useless Image Manipulation</title>
+
+    <script src="script.js" type="text/javascript"></script>
+
+    <style>
+        @keyframes left-right {
+            from {left:0px;}
+            to {left:400px;}
+        }
+        div {
+            z-index: -2;
+            position:absolute;
+            left:0px;
+            top:0px;
+            width:400px;
+            height:800px;
+            background-color:green;
+        }
+        div.anim {
+            animation: left-right 3s linear 0s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="anim"></div> -->
+    <canvas id="canvas"></canvas>
+    <!-- <input type="range" id="slider" min="0" max="100" style="width:100%"/> -->
+    <!-- <image src="bouquet.png" /> -->
+    <!-- <image src='fire.png' width=50 height=50/> -->
+    <!-- <image src='portrait-small.jpg' width=50 height=50/> -->
+</body>
+</html>
